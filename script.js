@@ -16,7 +16,6 @@ function writePassword() {
     window.alert("yourpassword Must be between 8 and 128");
   }
 
-
   //library
   const alphabetlower = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
   const alphabetupper = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
@@ -24,7 +23,6 @@ function writePassword() {
   const numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
   
   //If statement(filter)
-
   var passwordContainer = [];
 
   if (lower === true) {
@@ -42,27 +40,18 @@ function writePassword() {
   console.log(passwordContainer[4]);
 
   var password = [];
-
   //loop
   for (var i = 0; i < digits; i++) {
     var randomIndex = Math.floor(Math.random() * passwordContainer.length);
-
-
-
     password[i] = passwordContainer[randomIndex];
-
   }
-  //return password
-
+ 
+  //logs
   console.log(password)
   console.log(digits, lower, upper, numeric, sym);
 
-
   var passwordText = document.querySelector("#password");
-
   passwordText.value = password;
-
 }
-
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
