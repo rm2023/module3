@@ -1,1 +1,1 @@
-# module3
+# This password generator will provide a password with number, symbols, capitol and lowercase letters if needed. this will generate a password from 8 - 128 digits, and will be random. To get started just click Generate password and folow the prompts, you can genarate a new one if it doesnt look secure.
